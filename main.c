@@ -389,7 +389,7 @@ main() {
 				Scan();
 			}
 		} else {
-			PWM_Ramp (0, 0, 0, 0, 1, 0);
+			if (!override) PWM_Ramp (0, 0, 0, 0, 1, 0);
 			Scan();
 		}
 

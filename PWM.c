@@ -278,7 +278,6 @@ BOOL PWM_Busy (void) {
 */ 
 //********************************************************************************
 void PWM_Set (unsigned char pwm1, unsigned char pwm2, unsigned char pwm3, unsigned char pwm4) {
-	// .	
 	pwmState = OFF;	// Stop ramping now
 	__delay_ms(10);	// Wait for next interrupt
 	
